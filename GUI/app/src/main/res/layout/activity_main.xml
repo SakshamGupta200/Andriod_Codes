@@ -13,7 +13,7 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Welcome"
         android:textSize="25sp"
         android:textStyle="bold"
         android:gravity="center"
@@ -33,5 +33,12 @@
         android:layout_height="wrap_content"
         android:text="Change Color"
         android:textSize="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="bottom|center"
+        android:text="Saksham Gupta" />
 
 </LinearLayout>

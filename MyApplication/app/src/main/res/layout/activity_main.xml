@@ -35,25 +35,26 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Add" />
+            android:text="+" />
 
         <Button android:id="@+id/subtractButton"
             android:layout_width= "9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Sub"/>
+            android:textStyle="bold"
+            android:text="-"/>
 
         <Button android:id="@+id/multiplyButton"
             android:layout_width= "0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Mul"/>
+            android:text="*"/>
 
         <Button android:id="@+id/divideButton"
             android:layout_width= "0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Div"/>
+            android:text="/" />
 
     </LinearLayout>
 
@@ -65,4 +66,12 @@
         android:layout_marginTop="50dp"
         android:text="Result will be displayed here"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="490sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="bottom|center"
+        android:text="Saksham Gupta" />
 </LinearLayout>
