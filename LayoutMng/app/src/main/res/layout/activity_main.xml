@@ -40,10 +40,12 @@
             android:text="Button 3" />
 
     </RelativeLayout>
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="bottom|center"
-    android:textSize="25sp"
-    android:text="Saksham Gupta"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="sans-serif"
+        android:gravity="bottom|center"
+        android:text="Surendra"
+        android:textSize="25sp" />
 </LinearLayout>

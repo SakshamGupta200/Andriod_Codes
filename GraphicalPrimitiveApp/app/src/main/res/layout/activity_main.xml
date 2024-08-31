@@ -19,6 +19,6 @@
         android:layout_height="wrap_content"
         android:gravity="bottom|center"
         android:textSize="24sp"
-        android:text="Saksham Gupta"/>
+        android:text="Surendra"/>
 
 </LinearLayout>

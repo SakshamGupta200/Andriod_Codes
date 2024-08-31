@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                     textView.setTextColor(Color.BLACK);
                 }
                 else {
-                    textView.setTextColor(Color.RED);
+                    textView.setTextColor(Color.GREEN);
                 }
                 isColorChanged = !isColorChanged;
             }
