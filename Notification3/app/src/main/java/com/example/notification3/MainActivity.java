@@ -1,9 +1,11 @@
 package com.example.notification3;
 
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,7 +33,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addNotification() {
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(this).setSmallIcon(R.drawable.baseline_circle_notifications_24).setContentTitle("Notification Example").setContentText("This is a notification message") .setAutoCancel(true).setPriority(NotificationCompat.PRIORITY_DEFAULT);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            NotificationChannel channel = new NotificationChannel("channel_id", "Channel Name", NotificationManager.IMPORTANCE_DEFAULT);
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "channel_id")
+                .setSmallIcon(R.drawable.baseline_circle_notifications_24)
+                .setContentTitle("Notification Example")
+                .setContentText("This is a notification message")
+                .setAutoCancel(true)
+                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
 
         Intent notificationIntent = new Intent(this, NotificationView.class);
         notificationIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
