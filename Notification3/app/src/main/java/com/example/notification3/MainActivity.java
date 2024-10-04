@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "channel_id")
                 .setSmallIcon(R.drawable.baseline_circle_notifications_24)
                 .setContentTitle("Notification Example")
-                .setContentText("This is a notification message")
+                .setContentText("Hello Umang, This is a notification message")
                 .setAutoCancel(true)
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT);
 

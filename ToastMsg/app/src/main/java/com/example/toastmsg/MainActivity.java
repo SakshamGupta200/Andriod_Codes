@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
              String text = editText1.getText().toString();
              String text1 = editText2.getText().toString();
 
-                Toast.makeText(MainActivity.this, "User Id: shubhangi  & Password: 123", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "User Id: umang  & Password: 123", Toast.LENGTH_SHORT).show();
 
-                if (text.equals("shubhangi") && text1.equals("123")) {
+                if (text.equals("umang") && text1.equals("123")) {
 
                     Toast.makeText(MainActivity.this, "Success", Toast.LENGTH_LONG).show();
                 }
